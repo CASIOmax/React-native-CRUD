@@ -86,9 +86,10 @@ export default function Index() {
       >
         {item.title}
       </Text>
+      </Pressable>
+
         <Pressable onPress={()=> removeTodo(item.id)}>
           <MaterialCommunityIcons name="delete-circle" size={36} color="red" selectable={undefined} />
-        </Pressable>
         </Pressable>
     </View>
   )
